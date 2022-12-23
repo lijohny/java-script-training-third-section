@@ -24,42 +24,37 @@ function getWeekDay(date) {
     } if (date.getDay() == 6) {
         day = "SA"
     }
-    switch (date.getDay()) {
-        case 0:
-            day = "Sun";
-            break;
-        case 1:
-            day = "Mon";
-            break;
-        case 2:
-            day = "Tues";
-            break;
-        case 3:
-            day = "Wednes";
-            break;
-        case 4:
-            day = "Thurs";
-            break;
-        case 5:
-            day = "Fri";
-            break;
-        case 6:
-            day = "Satur";
-    }
+    // switch (date.getDay()) {
+    //     case 0:
+    //         day = "Sun";
+    //         break;
+    //     case 1:
+    //         day = "Mon";
+    //         break;
+    //     case 2:
+    //         day = "Tues";
+    //         break;
+    //     case 3:
+    //         day = "Wednes";
+    //         break;
+    //     case 4:
+    //         day = "Thurs";
+    //         break;
+    //     case 5:
+    //         day = "Fri";
+    //         break;
+    //     case 6:
+    //         day = "Satur";
+    // }
     return day
 }
-
-
-
-
-
 
 let date = new Date(2012, 0, 3);  // 3 Jan 2012
 alert(getWeekDay(date));        // should output "TU"
 // console.log(getWeekDay(date));
 
-function getWeekDay(date) {
-    let days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+// function getWeekDay(date) {
+//     let days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
 
-    return days[date.getDay()];
-}
+//     return days[date.getDay()];
+// }
